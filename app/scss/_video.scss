@@ -1,0 +1,27 @@
+.video{
+  min-width:370px;
+  width:100%;
+  min-height:260px;
+  position: relative;
+  margin:0 auto;
+
+  &__play{
+    position: absolute;
+    top:50%;
+    left:40%;
+    width:80px;
+    height:80px;
+    border-radius: 50%;
+    transform:translateY(-50%);
+    background: white url("../img/playArrow.png") no-repeat center center;
+  }
+}
+video{
+  width:auto;
+  height:100%;
+  position: relative;
+  bottom:0;
+  left:0;
+}
+
+

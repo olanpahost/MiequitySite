@@ -1,0 +1,16 @@
+.hero{
+  box-sizing: border-box;
+  text-align: center;
+  background: url("../img/hero.png") no-repeat center center;
+  background-size: auto 100%;
+  min-height:770px;
+  padding:290px 0;
+  color:#fff;
+}
+h1{
+  font:8.6em "RobotoSlab";
+}
+p.hero__text{
+  font:27px Roboto;
+  line-height:1.5;
+}

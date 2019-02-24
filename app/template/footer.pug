@@ -1,0 +1,36 @@
+.content
+    footer
+            div.footerUp
+                div.footerUp__left
+                    div.logo__footer
+                    nav.nav.nav-footer
+                        - var items = ["Home", "ABOUT", "SERVICES","INVESTMENTS"]
+                        each item in items
+                            div.nav__item.nav__item__footer
+                                 a(href="#")=item
+
+                        div.nav__item.nav__item__footer.nav__item__footer-active
+                            a(href="#") blog
+                        div.nav__item.nav__item__footer
+                            a(href="#") contact
+                div.footerUp__right
+                    div.contactInfo 267 Banbury Road  Summertown  Oxford.
+                        br
+                        |42 Upper Berkeley Street  London.
+                        br
+                        | +44 777888 989
+                        br
+                        | hello@massimpressions.com
+            div.footerDown
+                div.copyright &copy; 2017 Mass Impressions & Tranmautritam. Make the right impress &#124; &#124; &nbsp; Privacy Policy
+                div.social
+                    a(href="#")
+                            i.fab.fa-facebook-f
+                    a(href="#")
+                            i.fab.fa-twitter
+                    a(href="#")
+                        i.fab.fa-instagram
+                    a(href="#")
+                        i.fab.fa-google-plus-g
+                    a(href="#")
+                        i.fab.fa-linkedin-in

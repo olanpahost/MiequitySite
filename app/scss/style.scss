@@ -1,0 +1,29 @@
+
+@import "slick";
+@import "slick-theme";
+@import "var";
+@import "fonts";
+@import '../../node_modules/reset-css/_reset';
+body{
+  font-size: 14px;
+  a{
+    text-decoration: none;
+    color:inherit;
+  }
+}
+.a-block{
+  display:block;
+}
+.wrapper{
+  width:100%;
+  overflow-x: hidden;
+}
+@import "header";
+@import "sectionHero";
+@import "Blog";
+@import "video";
+@import "Slider";
+@import "columns";
+@import "contactUs";
+@import "footer";
+@import "media";

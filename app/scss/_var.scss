@@ -1,0 +1,68 @@
+$bg_color: #f4f7fd;
+$text_color: #423f54;
+$text_color-opac: rgba(66, 63, 84, 0.5);
+$nav-active: #efae7c;
+$button-blue: #6472b7;
+$boxshadow:0 0 20px 5px lightgrey;
+$button-lightblue: #c1e1f4;
+$button-text-color: #7a7887;
+$h3-color: #555365;
+$data-color: #adabb5;
+$text-lightblue: #edf1f2;
+$bg-lightblue: rgba(106, 119, 183, 0.9);
+$em: 8px;
+$footerInfo: #9a98a0;
+$bg-label: #444443;
+$label-color: rgba(46, 44, 59, 0.73);
+$label-big: 148px;
+@mixin label_common{
+  background-color: $label-color;
+  height: 40px;
+  border-radius: 20px;
+  position:absolute;
+  top:20px;
+  z-index: 25;
+}
+@mixin label-before{
+  color: white;
+  font: 16px "Roboto";
+  line-height: 0;
+  position:absolute;
+  top:20px;
+}
+@mixin label-big{
+  @include label_common;
+  width: $label-big;
+  left:20px;
+  &::before {
+    content: 'Strategic Growth';
+    left:20px;
+    @include label-before;
+  }
+}
+@mixin label-short{
+  @include label_common;
+  width: 101px;
+  left:20px;
+  &::before {
+    content: 'Equity';
+    left:30px;
+    @include label-before;
+  }
+}
+@mixin label-middle{
+  @include label-common;
+  width:150px;
+  right: 20px;
+  &::before{
+    content: 'Featured';
+    right:40px;
+    @include label-before;
+  }
+}
+
+@mixin slider-dots($hw, $cc){
+  width:$hw;
+  height:$hw;
+  background-color: $cc;
+}

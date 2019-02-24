@@ -1,0 +1,41 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title Miequity
+        link(rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png")
+        link(rel="stylesheet" href="fonts/FontAwesome/css/fontawesome-all.min.css")
+        link(rel="stylesheet" href="css/style.css")
+    body
+        .wrapper
+            header.header
+                - var items = ["Home", "ABOUT", "SERVICES","INVESTMENTS"]
+                a.a-block(href="#").logo
+
+                input(type="checkbox" id="nav" class="nav-ticker")
+                label(class="nav__label" for="nav")
+                    i.fas.fa-bars
+                    i.far.fa-window-close
+                nav.nav
+                    each item in items
+                        div.nav__item
+                            a(href="#")=item
+                    div.nav__item.nav__item-active
+                        a(href="#") blog
+                    div.nav__item
+                        a(href="#") contact
+            section.hero
+                h1 Business Insight
+                p.hero__text Adding value to companies through strategic,
+                p.hero__text   operational, and financial guidance.
+                div.arrow
+            include blog
+            include block-contactUs
+            include footer
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.dotdotdot/3.2.2/jquery.dotdotdot.js")
+        script(src="libs/slick.js")
+        script(src="js/dot.js")
+
+

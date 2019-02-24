@@ -1,0 +1,92 @@
+h2 {
+  font: 72px "RobotoSlab";
+  margin-bottom: 30px;
+}
+
+.slider-block {
+  width: 100%;
+  height: 40vw;
+  position: relative;
+  overflow: hidden;
+  background: grey;
+}
+
+.slick-initialized .slick-slide.slick-active {
+  z-index: 1;
+}
+
+.slider__more-info {
+  margin: 40px;
+  font: 16px "RobotoBlack";
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+   a{
+    position:relative;
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: -50%;
+      width: 30px;
+      height: 30px;
+      background: url("../img/readMore.png") no-repeat 100% 100%;
+    }
+  }
+}
+
+.slider {
+  width: 100%;
+}
+
+.slider__item {
+  width: 100vw;
+  height: 40vw;
+  position: relative;
+  background: #eee;
+  color: white;
+}
+
+.slider__image {
+  width: 100%;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.slider__text {
+  background: rgba(46, 44, 59, 0.35);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero__text-slider {
+  margin: 20px auto 40px;
+}
+
+.slick-dots {
+  bottom:5%;
+  li {
+
+    button {
+      border-radius: 50%;
+      @include slider-dots(7px, #d1c3bb);
+      &:before {
+        content: '';
+      }
+    }
+    &.slick-active button {
+      @include slider-dots(13px, $nav-active);
+    }
+
+  }
+}
+

@@ -1,0 +1,92 @@
+footer {
+  width: 100%;
+  height: 267px;
+  //background-color: lightblue;
+  margin-bottom: -150px;
+}
+
+.logo__footer {
+  background: url("../img/logo_footer.png") no-repeat left top;
+  width: 215px;
+  height: 64px;
+}
+
+.footerUp {
+  width: 100%;
+  height: 197px;
+  overflow: hidden;
+  position: relative;
+  &__left {
+    float: left;
+    width: 80%;
+  }
+  &__right {
+    float: right;
+  }
+}
+
+.nav-footer {
+  max-width: 750px;
+  width: 50%;
+  justify-content: space-between;
+}
+
+.nav__item__footer {
+  margin-right: 50px;
+  &:hover, &-active {
+    color: $nav-active;
+  }
+
+}
+
+.copyright {
+  position: absolute;
+  left: 0;
+  top: 25px;
+  font: 14px RobotoLight;
+  color: $footerInfo;
+}
+
+.social {
+  position: absolute;
+  right: 0;
+  top: 25px;
+  width: 200px;
+  font: 16px fontawesome;
+  color: $footerInfo;
+  display:flex;
+  justify-content: flex-end;
+  a {
+    margin: 2px;
+    display:block;
+    border:1px solid white;
+    width:31px;
+    padding:7px 0;
+    box-sizing: border-box;
+    text-align: center;
+    height:31px;
+    border-radius: 50%;
+    transition: color 250ms, border-color 250ms;
+    &:hover {
+      color: $nav-active;
+      border-color: $footerInfo;
+      box-shadow:$boxshadow;
+    }
+  }
+}
+
+.contactInfo {
+  font: 15px "Roboto";
+  line-height: 2em;
+  color: $footerInfo;
+  text-align: right;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.footerDown {
+  border-top: 1px solid $footerInfo;
+  position: relative;
+}
+
